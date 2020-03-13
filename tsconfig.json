@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "lib": [
+      "dom",
+      "es5",
+      "scripthost",
+      "es2015.collection",
+      "es2015.promise"
+    ]
+  },
+  "include": [
+    "index.ts",
+    "lib/**/*",
+    "../../.WebStorm2019.3/config/javascript/nodejs/12.16.1/node-typings/node_modules/@types/node/globals.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

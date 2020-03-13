@@ -1,0 +1,33 @@
+{
+  "name": "opentelemetrydemo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "babel-node --extensions \".ts,.js\" -- index.ts",
+    "babel-version": "babel --version"
+  },
+  "dependencies": {
+    "@opentelemetry/api": "^0.4.0",
+    "@opentelemetry/core": "^0.4.0",
+    "@opentelemetry/exporter-jaeger": "^0.4.0",
+    "@opentelemetry/exporter-zipkin": "^0.4.0",
+    "@opentelemetry/metrics": "latest",
+    "@opentelemetry/node": "^0.4.0",
+    "@opentelemetry/plugin-http": "^0.4.0",
+    "@opentelemetry/tracing": "^0.4.0",
+    "@types/node": "^13.9.0",
+    "@opentelemetry/exporter-prometheus": "latest"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-typescript": "^7.8.3"
+  }
+}
