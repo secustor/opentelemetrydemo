@@ -10,7 +10,7 @@ export function initTracing(serviceName: string) {
         logLevel: LogLevel.DEBUG,
     });
 
-    opentelemetry.trace.initGlobalTracerProvider(provider);
+    provider.register();
 
     provider.addSpanProcessor(
     new SimpleSpanProcessor(

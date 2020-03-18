@@ -3,20 +3,19 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "type": "module",
   "scripts": {
     "start": "babel-node --extensions \".ts,.js\" -- index.ts",
     "babel-version": "babel --version"
   },
   "dependencies": {
-    "@opentelemetry/api": "^0.4.0",
-    "@opentelemetry/core": "^0.4.0",
-    "@opentelemetry/exporter-jaeger": "^0.4.0",
-    "@opentelemetry/exporter-zipkin": "^0.4.0",
+    "@opentelemetry/api": "^0.5.0",
+    "@opentelemetry/core": "^0.5.0",
+    "@opentelemetry/exporter-jaeger": "^0.5.0",
+    "@opentelemetry/exporter-zipkin": "^0.5.0",
     "@opentelemetry/metrics": "latest",
-    "@opentelemetry/node": "^0.4.0",
-    "@opentelemetry/plugin-http": "^0.4.0",
-    "@opentelemetry/tracing": "^0.4.0",
+    "@opentelemetry/node": "^0.5.0",
+    "@opentelemetry/plugin-http": "^0.5.0",
+    "@opentelemetry/tracing": "^0.5.0",
     "@types/node": "^13.9.0",
     "@opentelemetry/exporter-prometheus": "latest"
   },
