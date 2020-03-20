@@ -3,12 +3,19 @@ import {BoundCounter, Metric} from "@opentelemetry/api";
 import { PrometheusExporter } from '@opentelemetry/exporter-prometheus';
 import {IncomingMessage, RequestOptions} from "http";
 
-const meter = new MeterProvider().getMeter('test-meter');
-meter.addExporter(
-    new PrometheusExporter({ startServer: true }, () => {
-        console.log("prometheus scrape endpoint: http://localhost:9464/metrics");
-    })
+const exporter = new PrometheusExporter(
+    {
+        startServer: true,
+    },
+    () => {
+        console.log('prometheus scrape endpoint: http://localhost:9464/metrics');
+    },
 );
+const meter = new MeterProvider({
+    exporter,
+    interval: 1000,
+}).getMeter('example-ts');
+
 const requestCount: Metric<BoundCounter> = meter.createCounter("http_request_counter", {
     monotonic: true,
     labelKeys: [

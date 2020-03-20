@@ -8,16 +8,16 @@
     "babel-version": "babel --version"
   },
   "dependencies": {
-    "@opentelemetry/api": "^0.5.0",
-    "@opentelemetry/core": "^0.5.0",
-    "@opentelemetry/exporter-jaeger": "^0.5.0",
-    "@opentelemetry/exporter-zipkin": "^0.5.0",
-    "@opentelemetry/metrics": "latest",
-    "@opentelemetry/node": "^0.5.0",
-    "@opentelemetry/plugin-http": "^0.5.0",
-    "@opentelemetry/tracing": "^0.5.0",
+    "@opentelemetry/api": "^0.5.1",
+    "@opentelemetry/core": "^0.5.1",
+    "@opentelemetry/exporter-jaeger": "^0.5.1",
+    "@opentelemetry/exporter-zipkin": "^0.5.1",
+    "@opentelemetry/metrics": "^0.5.1",
+    "@opentelemetry/node": "^0.5.1",
+    "@opentelemetry/plugin-http": "^0.5.1",
+    "@opentelemetry/tracing": "^0.5.1",
     "@types/node": "^13.9.0",
-    "@opentelemetry/exporter-prometheus": "latest"
+    "@opentelemetry/exporter-prometheus": "^0.5.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
